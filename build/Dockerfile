@@ -1,4 +1,4 @@
-FROM FROM ubuntu:hirsute AS btc-build
+FROM ubuntu:hirsute AS btc-build
 LABEL date=26022021
 RUN apt-get install python3-picamera
 RUN apt-get install python3-pip
