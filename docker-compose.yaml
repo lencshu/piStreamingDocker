@@ -1,0 +1,14 @@
+version: '3'
+
+services:
+  pistreaming:
+    container_name: srv-pistreaming
+    build: ./build/
+    stdin_open: true
+    tty: true
+    restart: always
+    ports:
+        - "80:8082"
+    volumes: 
+        - ./src:/app
+
