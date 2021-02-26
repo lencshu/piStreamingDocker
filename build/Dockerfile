@@ -1,7 +1,5 @@
-FROM python:3.8-slim
+FROM plexcloudmusic/ffmpeg
 LABEL date=26022021
-
-RUN apt-get install ffmpeg
 
 RUN pip install --no-cache-dir ws4py
 RUN pip install --no-cache-dir picamera
