@@ -1,8 +1,8 @@
-FROM ubuntu:hirsute AS btc-build
+FROM ubuntu:xenial
 RUN apt-get update && apt-get upgrade -y
 LABEL date=26022021
-RUN apt-get install python3-picamera
 RUN apt-get install python3-pip
+RUN apt-get install python3-picamera
 RUN pip3 install ws4py
 RUN apt-get install ffmpeg
 
