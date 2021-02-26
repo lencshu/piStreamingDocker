@@ -1,4 +1,5 @@
 FROM ubuntu:hirsute AS btc-build
+RUN apt-get update && apt-get upgrade -y
 LABEL date=26022021
 RUN apt-get install python3-picamera
 RUN apt-get install python3-pip
